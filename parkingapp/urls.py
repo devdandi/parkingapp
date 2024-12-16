@@ -19,5 +19,5 @@ from django.urls import path
 from auths import views as auth_view
 
 urlpatterns = [
-    path('', auth_view.index),
+    path('', auth_view.index, name='autg'),
 ]
