@@ -17,7 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from auths import views as auth_view
+from dashboards import views as dashboard_view
+
 
 urlpatterns = [
-    path('', auth_view.index, name='autg'),
+    path('signin', auth_view.index, name='auth'),
+    path('', dashboard_view.index, name='dashboard'),
+    
 ]
